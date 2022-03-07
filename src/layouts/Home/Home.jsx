@@ -16,11 +16,7 @@ const Home = () => {
 
 	const handleSubmit = async () => {
 		try {
-			const res = await fetch(`https://api.github.com/users/${value}`, {
-				headers: {
-					Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-				},
-			});
+			const res = await fetch(`https://api.github.com/users/${value}`);
 			const data = await res.json();
 			setUser(data);
 			setValue('');
