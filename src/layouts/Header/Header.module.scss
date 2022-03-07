@@ -1,0 +1,13 @@
+@import '../../styles/index.scss';
+
+.headerContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	.headerTitle {
+		margin: 0;
+		padding: 0;
+	}
+}
